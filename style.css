@@ -59,6 +59,11 @@ body {
     color: #333333;
 }
 
+.titre_page {
+font-size: 30px;
+font-weight: bold;  
+}
+
 .content {
     width: 80%;
     padding: 20px;

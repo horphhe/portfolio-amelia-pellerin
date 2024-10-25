@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: "Georgia", serif;
+    font-family: 'DINdong', sans-serif;
+    font-size: 13px;
     background-color: #ffffff;
     color: #333333;
 }
@@ -68,3 +69,13 @@ body {
     color: #666666;
     margin-top: 5px;
 }
+
+@font-face {
+    font-family: 'DINdong';
+    src: url('../fonts/dindong-webfont.woff2') format('woff2'),
+         url('../fonts/dindong-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

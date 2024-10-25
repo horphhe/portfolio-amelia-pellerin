@@ -83,13 +83,12 @@ font-weight: bold;
 .photo-gallery img {
     width: 100%;
     height: auto;
-    border: 1px solid #ddd;
     padding: 5px;
 }
 
 .photo-gallery figcaption {
     font-size: 0.9em;
     color: #666666;
-    margin-top: 5px;
+    padding: 5px;
 }
 

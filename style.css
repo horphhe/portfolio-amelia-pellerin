@@ -61,7 +61,8 @@ body {
 
 .titre_page {
 font-size: 30px;
-font-weight: bold;  
+font-weight: bold;
+margin-bottom: 20px;
 }
 
 .content {

@@ -61,7 +61,7 @@ body {
 }
 
 .sidebar ul li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .sidebar ul li a {
@@ -89,7 +89,6 @@ margin-bottom: 20px;
 .photo-gallery figure {
     max-width: 200px;
     text-align: left;
-    font-family: 'brizeuxnormal', sans-serif;
 }
 
 .photo-gallery img {
@@ -100,5 +99,7 @@ margin-bottom: 20px;
 .photo-gallery figcaption {
     font-size: 0.7em;
     color: #666666;
+    margin-top: 6px;
+    font-family: 'brizeuxnormal', sans-serif;
 }
 

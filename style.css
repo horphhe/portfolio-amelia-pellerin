@@ -77,18 +77,40 @@ margin-bottom: 40px;
 }
 
 .content {
-    width: 80%;
+    width: 100%;
     padding: 30px;
-    overflow: auto; /* Permet de scroller le contenu si nécessaire */
+    overflow: auto;
 }
 
 .photo-gallery {
     display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
     gap: 20px;
 }
 
+.case {
+    max-width: 300px; /* Largeur maximale de chaque case */
+    text-align: center;
+    background-color: #f8f8f8; /* Pour visualiser les cases */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.case img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.case figcaption {
+    font-size: 0.9em;
+    color: #7171ff;
+    font-family: 'brizeuxnormal', sans-serif;
+}
+
 .photo-gallery figure {
-    max-width: 200px;
+    max-width: 400px;
     text-align: left;
 }
 

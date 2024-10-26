@@ -70,6 +70,10 @@ body {
     color: #7171ff;
 }
 
+.sidebar ul li a:hover {
+    color: #ff5733; /* Couleur de texte lorsqu'on passe la souris */
+}
+
 .titre_page {
 font-size: 30px;
 font-weight: bold; 

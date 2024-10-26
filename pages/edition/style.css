@@ -70,6 +70,10 @@ body {
     color: #7171ff;
 }
 
+.sidebar ul li a:hover {
+    color: #ff5733; /* Couleur de texte lorsqu'on passe la souris */
+}
+
 .titre_page {
 font-size: 30px;
 font-weight: bold; 
@@ -108,4 +112,12 @@ margin-bottom: 40px;
     color: #7171ff;
     margin-top: 6px;
     font-family: 'brizeuxnormal', sans-serif;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    color: #7171ff;
+    text-align: left;
 }

@@ -109,3 +109,12 @@ margin-bottom: 40px;
     margin-top: 6px;
     font-family: 'brizeuxnormal', sans-serif;
 }
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid blue;
+    font-size: 0.7em;
+    color: #7171ff;
+    text-align: left;
+}

@@ -55,11 +55,11 @@ body {
 .container h2 {
     font-size: 1em;
     margin-bottom: 10px;
-    color: blue;
 }
 
 .container a {
     text-decoration: none;
+    color: blue;
 }
 
 .container a:hover {

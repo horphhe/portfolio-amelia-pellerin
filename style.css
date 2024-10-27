@@ -98,7 +98,7 @@ margin-bottom: 10px;
 .photo-gallery {
     display: flex;
     flex-direction: column; /* Affiche les éléments en colonne */
-    gap: 5px;
+    gap: 18px;
 }
 
 .case {
@@ -127,7 +127,7 @@ margin-bottom: 10px;
 .photo-gallery figcaption {
     font-size: 0.7em;
     color: #7171ff;
-    margin-top: 6px;
+    margin-bottom: 9px;
     font-family: 'brizeuxnormal', sans-serif;
 }
 

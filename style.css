@@ -98,7 +98,7 @@ margin-bottom: 40px;
 .photo-gallery {
     display: flex;
     flex-direction: column; /* Affiche les éléments en colonne */
-    gap: 15px;
+    gap: 5px;
 }
 
 .case {

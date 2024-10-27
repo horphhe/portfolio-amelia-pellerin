@@ -52,9 +52,17 @@ body {
     color: blue; 
 }
 
-.sidebar h2 {
+.container h2 {
     font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #ff5733; /* Couleur de texte lorsqu'on passe la souris */
 }
 
 .sidebar ul {

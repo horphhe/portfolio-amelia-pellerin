@@ -175,6 +175,13 @@ margin-bottom: 10px;
     height: auto; /* Maintain aspect ratio */
 }
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Space between the images */
+    max-width: fit-content; /* Adjust the maximum width as needed */
+}
+
 .footer {
     margin-top: 30px;
     padding-top: 20px;

@@ -162,6 +162,20 @@ margin-bottom: 10px;
     font-family: 'brizeuxnormal', sans-serif;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Space between the images */
+    max-width: 900px; /* Adjust the maximum width as needed */
+    margin: 20px; /* Center the grid */
+}
+
+.grid-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
 .footer {
     margin-top: 30px;
     padding-top: 20px;

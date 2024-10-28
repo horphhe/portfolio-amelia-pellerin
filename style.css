@@ -99,6 +99,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column; /* Affiche les éléments en colonne */
     gap: 18px;
+    max-width: 500px;
 }
 
 .case {

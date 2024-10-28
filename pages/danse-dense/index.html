@@ -25,8 +25,8 @@
                 <figure class="case">
                     <p>L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).</p>
             
-                    <div class="carousel" id="carousel">
-        <div class="carousel-images">
+                     <div class="carousel">
+            <div class="carousel-images">
             <img src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/danse-dense/carousell/dd1.jpg" alt="Image 1">
             <img src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/danse-dense/carousell/dd2.jpg" alt="Image 2">
             <img src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/danse-dense/carousell/dd3.jpg" alt="Image 3">
@@ -36,7 +36,40 @@
         </div>
     </div>
                     
-    <script src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/danse-dense/script.js"></script>
+     <script>
+        const carouselImages = document.querySelector('.carousel-images');
+const images = carouselImages.querySelectorAll('img');
+const totalImages = images.length;
+
+// Initialiser le décalage
+let scrollAmount = 0; 
+const imageWidth = 300; // Largeur de chaque image
+
+function scrollCarousel() {
+    scrollAmount += 1; // Défilement par étape
+
+    // Appliquer la transformation pour faire défiler les images
+    carouselImages.style.transform = `translateX(-${scrollAmount}px)`;
+
+    // Réinitialiser si nous avons dépassé la largeur totale des images
+    if (scrollAmount >= imageWidth * (totalImages / 2)) {
+        scrollAmount = 0; // Réinitialiser à 0
+        // Remettre les images à leur position initiale sans animation
+        carouselImages.style.transition = 'none'; // Désactiver la transition
+        carouselImages.style.transform = 'translateX(0)'; // Remettre à 0
+        // Re-établir la transition après un court délai
+        setTimeout(() => {
+            carouselImages.style.transition = 'transform 0.5s ease'; // Réactiver la transition
+        }, 20);
+    }
+
+    requestAnimationFrame(scrollCarousel); // Continuer l'animation
+}
+
+// Démarrer l'animation de défilement
+scrollCarousel();
+
+    </script>
                     
                     <img src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/danse-dense/recherches.png" alt="Description de la photo 1">
         </figure>
@@ -47,6 +80,7 @@
             </footer>
         </main>
     </div>
+
 
 
 

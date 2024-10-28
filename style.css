@@ -169,7 +169,7 @@ margin-bottom: 10px;
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /* Transition douce */
     width: 300%; /* Ajustez en fonction du nombre d'images */
 }
 

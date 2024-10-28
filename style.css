@@ -166,14 +166,12 @@ margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; /* Space between the images */
-    max-width: 900px; /* Adjust the maximum width as needed */
-    margin: 20px; /* Center the grid */
+    max-width: fit-content; /* Adjust the maximum width as needed */
 }
 
 .grid-item img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: add rounded corners */
 }
 
 .footer {

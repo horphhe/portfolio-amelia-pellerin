@@ -160,6 +160,24 @@ margin-bottom: 10px;
     font-family: 'brizeuxnormal', sans-serif;
 }
 
+.carousel {
+    overflow: hidden;
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Ajustez en fonction du nombre d'images */
+}
+
+.carousel-images img {
+    width: 100%; /* Chaque image prendra toute la largeur du carousel */
+    height: auto;
+}
+
 .footer {
     margin-top: 30px;
     padding-top: 20px;

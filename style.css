@@ -29,11 +29,13 @@ body {
     height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
     display: flex;
     flex-direction: column;
+    
 }
 
 .container {
     display: flex;
     height: 100%; /* Prend toute la hauteur de la page */
+    overflow: hidden; /* Masquer le débordement */
 }
 
 .sidebar {
@@ -161,21 +163,29 @@ margin-bottom: 10px;
 }
 
 .carousel {
-    overflow: hidden;
-    width: 300px; /* Ajustez la largeur selon vos besoins */
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    width: 100%; /* Prend toute la largeur de la page */
     position: relative;
+    white-space: nowrap; /* Empêche le retour à la ligne des images */
 }
 
 .carousel-images {
-    display: flex;
-    transition: transform 0.5s ease; /* Transition douce */
-    width: 300%; /* Ajustez en fonction du nombre d'images */
+    display: inline-block;
+    animation: scroll 10s linear infinite; /* Animation de défilement */
 }
 
 .carousel-images img {
-    width: 100%; /* Chaque image prendra toute la largeur du carousel */
+    width: 300px; /* Ajustez selon la taille de vos images */
     height: auto;
+}
+
+/* Animation de défilement */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Défilement de 50% pour le duplicat */
+    }
 }
 
 .footer {

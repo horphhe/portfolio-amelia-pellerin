@@ -162,32 +162,6 @@ margin-bottom: 10px;
     font-family: 'brizeuxnormal', sans-serif;
 }
 
-.carousel {
-    width: 100%; /* Prend toute la largeur de la section */
-    position: relative;
-    white-space: nowrap; /* Empêche le retour à la ligne des images */
-}
-
-.carousel-images {
-    display: inline-block;
-    animation: scroll 15s linear infinite; /* Animation de défilement */
-}
-
-.carousel-images img {
-    width: 300px; /* Ajustez selon la taille de vos images */
-    height: auto; /* Gardez cette propriété pour conserver le ratio d'origine */
-    object-fit: cover; /* Remplir le conteneur en recadrant l'image si nécessaire */
-}
-
-/* Animation de défilement */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%); /* Défilement de 50% pour le duplicat */
-    }
-}
 .footer {
     margin-top: 30px;
     padding-top: 20px;

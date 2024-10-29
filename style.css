@@ -182,6 +182,12 @@ margin-bottom: 10px;
     max-width: fit-content; /* Adjust the maximum width as needed */
 }
 
+.contact {
+    font-family: 'brizeuxnormal', sans-serif;
+    font-size: 0.7em;
+    color: blue;
+}
+
 .footer {
     margin-top: 30px;
     padding-top: 20px;

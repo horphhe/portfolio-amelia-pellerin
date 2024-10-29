@@ -26,14 +26,14 @@ body {
     font-size: 13px;
     background-color: #ffffff;
     color: blue;
-    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .container {
     display: flex;
-    height: 100%; /* Prend toute la hauteur de la page */
+    height: 100%;
 }
 
 .sidebar {
@@ -45,7 +45,7 @@ body {
     border-right: 1px solid #000eff00;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Occupe toute la hauteur de .container */
+    height: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     font-size: 1em;
@@ -63,7 +63,7 @@ body {
 }
 
 .container a:hover {
-    color: #ff4100; /* Couleur de texte lorsqu'on passe la souris */
+    color: #ff4100;
 }
 
 .sidebar ul {
@@ -80,7 +80,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #ff4100; /* Couleur de texte lorsqu'on passe la souris */
+    color: #ff4100;
 }
 
 .titre_page {
@@ -97,15 +97,15 @@ margin-bottom: 10px;
 
 .photo-gallery {
     display: flex;
-    flex-direction: column; /* Affiche les éléments en colonne */
+    flex-direction: column;
     gap: 18px;
     max-width: 500px;
 }
 
 .case {
-    max-width: 1000px; /* Largeur maximale de la section */ /* Ajustez la hauteur selon vos besoins */
-    overflow: hidden; /* Masque le débordement */
-    position: relative; /* Position relative pour le positionnement des enfants */
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -134,7 +134,7 @@ margin-bottom: 10px;
 
 .photo-gallery .original {
     display: block;
-    transition: opacity 0.3s ease; /* Transition pour un effet fluide */
+    transition: opacity 0.3s ease;
 }
 
 .photo-gallery .trame {
@@ -143,16 +143,16 @@ margin-bottom: 10px;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0; /* Masquer par défaut */
-    transition: opacity 0.3s ease; /* Transition pour un effet fluide */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .photo-gallery a:hover .original {
-    opacity: 0; /* Masquer l'image originale au survol */
+    opacity: 0;
 }
 
 .photo-gallery a:hover .trame {
-    opacity: 1; /* Afficher l'image tramée au survol */
+    opacity: 1;
 }
 
 
@@ -166,20 +166,20 @@ margin-bottom: 10px;
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; /* Space between the images */
-    max-width: fit-content; /* Adjust the maximum width as needed */
+    grid-gap: 10px;
+    max-width: fit-content;
 }
 
 .grid-item img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .grid-container2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px; /* Space between the images */
-    max-width: fit-content; /* Adjust the maximum width as needed */
+    grid-gap: 10px;
+    max-width: fit-content;
 }
 
 .contact {

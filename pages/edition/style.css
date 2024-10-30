@@ -66,11 +66,6 @@
 }
 
 
-.content {
-    display: flex;
-    align-items: flex-end; /* Alignement du texte en bas */
-}
-
 @font-face {
     font-family: 'DINdong';
     src: url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/dindong-webfont.woff2') format('woff2'),

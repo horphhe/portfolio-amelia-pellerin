@@ -92,7 +92,7 @@ margin-bottom: 10px;
 .content {
     width: 100%;
     padding: 30px;
-    overflow: auto;
+    overflow: visible;
 }
 
 .photo-gallery {
@@ -104,7 +104,7 @@ margin-bottom: 10px;
 
 .case {
     max-width: 1000px;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 
@@ -199,3 +199,28 @@ margin-bottom: 10px;
     text-align: left;
 }
 
+.image-zoom {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.8); 
+    cursor: pointer; 
+    transform: scale(1.8);
+    cursor: pointer;
+    box-shadow: 0 4px 8px #ff4100e3;
+}
+
+.image-zoom2 {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom2:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+    transform: scale(1.4);
+    cursor: pointer;
+    box-shadow: 0 4px 8px #ff4100e3;
+}
+
+rgba(0, 0, 0, 0.3)

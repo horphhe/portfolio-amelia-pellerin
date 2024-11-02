@@ -208,7 +208,7 @@ margin-bottom: 10px;
     cursor: pointer; 
     transform: scale(1.8);
     cursor: pointer;
-    box-shadow: 0 4px 8px #ff4100e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .image-zoom2 {
@@ -220,7 +220,5 @@ margin-bottom: 10px;
     cursor: pointer;
     transform: scale(1.4);
     cursor: pointer;
-    box-shadow: 0 4px 8px #ff4100e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-rgba(0, 0, 0, 0.3)

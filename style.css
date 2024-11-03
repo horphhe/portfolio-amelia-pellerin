@@ -225,3 +225,16 @@ margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.image-zoom4 {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom4:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+

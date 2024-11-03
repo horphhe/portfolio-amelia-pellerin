@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'DINdong';
+    src: url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/dindong-webfont.woff2') format('woff2'),
+         url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/dindong-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brizeuxnormal';
+    src: url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/brizeux_normal-webfont.woff2') format('woff2'),
+         url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/brizeux_normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DINdong', sans-serif;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: blue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.sidebar {
+    
+    width: 20%;
+    min-width: 150px;
+    background-color: white;
+    padding: 30px;
+    border-right: 1px solid #000eff00;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 1em;
+    color: blue; 
+}
+
+.container h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.container a:hover {
+    color: #ff4100;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none; 
+    color: #7171ff;
+}
+
+.sidebar ul li a:hover {
+    color: #ff4100;
+}
+
+.titre_page {
+font-size: 1em;
+font-weight: bold; 
+margin-bottom: 10px;
+}
+
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 550px;
+}
+
+
+.case {
+    max-width: 1000px;
+    position: relative;
+    overflow: visible;
+}
+
+.case p {
+    font-family:'brizeuxnormal', sans-serif;
+    font-size: 0.7em;
+    color: #7171ff;
+    margin-bottom: 10px;
+}
+
+
+.photo-gallery figure {
+    max-width: 550px;
+    text-align: left;
+    gap : 10px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-gallery a {
+    position: relative;
+    display: inline-block;
+}
+
+.photo-gallery .original {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.photo-gallery .trame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-gallery a:hover .original {
+    opacity: 0;
+}
+
+.photo-gallery a:hover .trame {
+    opacity: 1;
+}
+
+
+.photo-gallery figcaption {
+    font-size: 0.7em;
+    color: #7171ff;
+    margin-bottom: 9px;
+    font-family: 'brizeuxnormal', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-family: 'brizeuxnormal', sans-serif;
+    font-size: 0.7em;
+    color: blue;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 0.7em;
+    color: #7171ff;
+    text-align: left;
+}
+
+.image-zoom {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.8); 
+    cursor: pointer; 
+    transform: scale(1.8);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-zoom2 {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom2:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+    transform: scale(1.4);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

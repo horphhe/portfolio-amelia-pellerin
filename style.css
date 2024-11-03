@@ -33,7 +33,14 @@ body {
 
 .container {
     display: flex;
-    height: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    padding: 30px;
+    overflow: auto;
+    min-height: 100vh;
 }
 
 .sidebar {
@@ -89,11 +96,6 @@ font-weight: bold;
 margin-bottom: 10px;
 }
 
-.content {
-    width: 100%;
-    padding: 30px;
-    overflow: visible;
-}
 
 .photo-gallery {
     display: flex;
@@ -102,12 +104,12 @@ margin-bottom: 10px;
     max-width: 550px;
 }
 
+
 .case {
     max-width: 1000px;
-    overflow: visible;
     position: relative;
+    overflow: visible;
 }
-
 
 .case p {
     font-family:'brizeuxnormal', sans-serif;

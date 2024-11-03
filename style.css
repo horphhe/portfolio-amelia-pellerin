@@ -48,7 +48,6 @@ body {
     min-width: 150px;
     background-color: white;
     padding: 30px;
-    border-right: 1px solid #000eff00;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -89,20 +88,12 @@ body {
     color: #ff4100;
 }
 
-.titre_page {
-font-size: 1em;
-font-weight: bold; 
-margin-bottom: 10px;
-}
-
-
 .photo-gallery {
     display: flex;
     flex-direction: column;
     gap: 18px;
     max-width: 550px;
 }
-
 
 .case {
     max-width: 1000px;
@@ -171,7 +162,6 @@ margin-bottom: 10px;
     grid-gap: 10px;
     max-width: fit-content;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .grid-item img {
@@ -191,6 +181,10 @@ margin-bottom: 10px;
     font-family: 'brizeuxnormal', sans-serif;
     font-size: 0.7em;
     color: blue;
+}
+
+.contact ul {
+    list-style-type: none;
 }
 
 .footer {
@@ -237,5 +231,3 @@ margin-bottom: 10px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-

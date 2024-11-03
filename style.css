@@ -225,14 +225,3 @@ margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.image-zoom3 {
-    transition: transform 0.3s ease;
-}
-
-.image-zoom3:hover {
-    transform: scale(1.8);
-    cursor: pointer;
-    transform: scale(1.8);
-    cursor: pointer;
-}
-

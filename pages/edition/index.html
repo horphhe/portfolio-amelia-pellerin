@@ -254,6 +254,18 @@
 });
 
     </script>
+                    <script>document.addEventListener("DOMContentLoaded", function() {
+  const arrowHint = document.getElementById("arrowHint");
+
+  $("#flipbook").turn({
+    when: {
+      turned: function(event, page, view) {
+        arrowHint.style.display = "none";
+      }
+    }
+  });
+});
+</script>
         </figure> 
         <figure class="case">
             <img src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/edition/tiersp_photo5.jpg" alt="Image 3">

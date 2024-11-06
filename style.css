@@ -58,7 +58,7 @@ body {
 }
 
 .container h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .case p {
     font-family:'brizeuxnormal', sans-serif;
-    font-size: 0.7em;
+    font-size: 1,3em;
     color: #7171ff;
     margin-bottom: 10px;
 }
@@ -150,7 +150,7 @@ body {
 
 
 .photo-gallery figcaption {
-    font-size: 0.7em;
+    font-size: 1,3em;
     color: #7171ff;
     margin-bottom: 9px;
     font-family: 'brizeuxnormal', sans-serif;

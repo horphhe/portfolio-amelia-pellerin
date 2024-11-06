@@ -1,71 +1,3 @@
-#book {
-    width: 550px; /* Largeur du livre */
-    height: 437px; /* Hauteur du livre */
-    margin: 50px auto; /* Centre le livre */
-    position: relative; /* Positionnement relatif pour les pages */
-}
-
-.cover-page {
-    background-color: #333;
-    border: 5px solid #000;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    z-index: 2; /* Priorité plus élevée pour les couvertures */
-    pointer-events: none; /* Empêche la couverture de réagir au survol du curseur */
-}
-
-.page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 16px; /* Ajuste la largeur de l'ombre à gauche */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); /* Ombre dégradée à gauche */
-    left: 0; /* Place l'ombre à gauche de la page */
-    z-index: 1; /* S'assure que l'ombre est visible au-dessus des pages */
-    pointer-events: none; /* Garde la page interactive */
-}
-
-.page::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 20px; /* Ajuste la largeur de l'ombre à droite */
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0)); /* Ombre dégradée à droite */
-    right: 0; /* Place l'ombre à droite de la page */
-    z-index: 1; /* S'assure que l'ombre est visible au-dessus des pages */
-    pointer-events: none; /* Garde la page interactive */
-}
-
-
-.page {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    height: 100%; /* Prend toute la hauteur du conteneur */
-    background: #fff; /* Couleur de fond de la page */
-    border: none; /* Bordure de la page */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ombre autour de la page */
-    position: relative; /* Positionnement absolu pour le retournement */
-    overflow: hidden; /* Cache le débordement de contenu */
-     display: flex;            /* Centrage du contenu de la page */
-    align-items: center;      /* Centrage vertical */
-    justify-content: center;  /* Centrage horizontal */
-    margin: 0;     /* Supprime les marges entre les pages */
-    padding: 0;  
-}
-
-.page:nth-child(odd) {
-    background: #eaeaea; /* Couleur alternative pour les pages impaires */
-}
-
-/* Style des images dans les pages */
-.page img {
-    width: 100%;              /* L'image occupe toute la largeur disponible */
-    height: 100%;             /* L'image occupe toute la hauteur disponible */
-    object-fit: cover;        /* L'image remplit la page sans être déformée */
-    display: block;           /* Évite les marges supplémentaires dues à l'image inline */
-}
-
-
 @font-face {
     font-family: 'DINdong';
     src: url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/dindong-webfont.woff2') format('woff2'),
@@ -80,6 +12,72 @@
          url('https://horphhe.github.io/portfolio-amelia-pellerin/fonts/brizeux_normal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+#book {
+    width: 550px;
+    height: 437px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.cover-page {
+    background-color: #333;
+    border: 5px solid #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    pointer-events: none; 
+}
+
+.page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: none; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    overflow: hidden;
+     display: flex;  
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;  
+}
+
+.page:nth-child(odd) {
+    background: #eaeaea;
+}
+
+.page img {
+    width: 100%;             
+    height: 100%;          
+    object-fit: cover; 
+    display: block;
 }
 
 
@@ -121,7 +119,7 @@ body {
 }
 
 .container h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -151,12 +149,6 @@ body {
     color: #ff4100;
 }
 
-.titre_page {
-font-size: 1em;
-font-weight: bold; 
-margin-bottom: 10px;
-}
-
 .content {
     width: 100%;
     padding: 30px;
@@ -179,11 +171,10 @@ margin-bottom: 10px;
 
 .case p {
     font-family:'brizeuxnormal', sans-serif;
-    font-size: 0.7em;
+    font-size: 1em;
     color: #7171ff;
     margin-bottom: 10px;
 }
-
 
 .photo-gallery figure {
     max-width: 550px;
@@ -200,60 +191,16 @@ margin-bottom: 10px;
     display: inline-block;
 }
 
-.photo-gallery .original {
-    display: block;
-    transition: opacity 0.3s ease;
-}
-
-.photo-gallery .trame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.photo-gallery a:hover .original {
-    opacity: 0;
-}
-
-.photo-gallery a:hover .trame {
-    opacity: 1;
-}
-
-
 .photo-gallery figcaption {
-    font-size: 0.7em;
+    font-size: 1em;
     color: #7171ff;
     margin-bottom: 9px;
     font-family: 'brizeuxnormal', sans-serif;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    max-width: fit-content;
-}
-
 .grid-item img {
     width: 100%;
     height: auto;
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    max-width: fit-content;
-}
-
-.contact {
-    font-family: 'brizeuxnormal', sans-serif;
-    font-size: 0.7em;
-    color: blue;
 }
 
 .footer {

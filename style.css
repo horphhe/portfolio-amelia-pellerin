@@ -14,6 +14,12 @@
     font-style: normal;
 }
 
+.no-style {
+  list-style-type: none;
+    font-family:'brizeuxnormal', sans-serif;
+    font-size: 0.7em;
+    color: #7171ff;
+}
 
 * {
     margin: 0;

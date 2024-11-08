@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+.no-style {
+  list-style-type: none;
+    font-family:'brizeuxnormal', sans-serif;
+    font-size: 0.7em;
+    color: #7171ff;
+}
+
 
 * {
     margin: 0;
@@ -59,7 +66,7 @@ body {
 }
 
 .container h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -89,12 +96,6 @@ body {
     color: #ff4100;
 }
 
-.titre_page {
-font-size: 1em;
-font-weight: bold; 
-margin-bottom: 10px;
-}
-
 
 .photo-gallery {
     display: flex;
@@ -112,7 +113,7 @@ margin-bottom: 10px;
 
 .case p {
     font-family:'brizeuxnormal', sans-serif;
-    font-size: 0.7em;
+    font-size: 1em;
     color: #7171ff;
     margin-bottom: 10px;
 }
@@ -159,7 +160,7 @@ margin-bottom: 10px;
 
 
 .photo-gallery figcaption {
-    font-size: 0.7em;
+    font-size: 1em;
     color: #7171ff;
     margin-bottom: 9px;
     font-family: 'brizeuxnormal', sans-serif;

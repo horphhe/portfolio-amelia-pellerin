@@ -116,6 +116,9 @@ body {
     font-size: 1em;
     color: blue;
     margin-bottom: 10px;
+    text-align: justify; 
+    hyphens: auto;
+    line-height: 1.5;
 }
 
 

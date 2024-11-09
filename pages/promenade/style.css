@@ -114,7 +114,7 @@ body {
 .case p {
     font-family:'brizeuxnormal', sans-serif;
     font-size: 1em;
-    color: #7171ff;
+    color: blue;
     margin-bottom: 10px;
 }
 
@@ -235,5 +235,9 @@ body {
     cursor: pointer;
     transform: scale(1.8);
     cursor: pointer;
+}
+
+.souligne {
+    text-decoration: underline !important;
 }
 

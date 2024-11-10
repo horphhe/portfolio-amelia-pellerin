@@ -188,8 +188,9 @@ body {
 
 .contact {
     font-family: 'brizeuxnormal', sans-serif;
-    font-size: 0.7em;
+    font-size: 1em;
     color: blue;
+    line-height: 1.5;
 }
 
 .contact ul {

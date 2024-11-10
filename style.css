@@ -210,6 +210,8 @@ body {
 }
 
 .image-zoom:hover {
+    position: relative;
+    z-index: 10;
     transform: scale(1.8); 
     cursor: pointer; 
     transform: scale(1.8);
@@ -222,6 +224,8 @@ body {
 }
 
 .image-zoom2:hover {
+    position: relative;
+    z-index: 10;
     transform: scale(1.4);
     cursor: pointer;
     transform: scale(1.4);
@@ -234,6 +238,8 @@ body {
 }
 
 .image-zoom4:hover {
+    position: relative;
+    z-index: 10;
     transform: scale(1.1);
     cursor: pointer;
     transform: scale(1.1);

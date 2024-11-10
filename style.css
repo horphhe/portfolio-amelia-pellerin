@@ -212,9 +212,9 @@ body {
 .image-zoom:hover {
     position: relative;
     z-index: 10;
-    transform: scale(1.8); 
+    transform: scale(1.5); 
     cursor: pointer; 
-    transform: scale(1.8);
+    transform: scale(1.5);
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

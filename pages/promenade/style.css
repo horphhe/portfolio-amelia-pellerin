@@ -14,6 +14,29 @@
     font-style: normal;
 }
 
+
+.ligne-avec-fleches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  max-width: 550px;
+}
+
+.ligne {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fleche-gauche, .fleche-droite {
+  font-size: 1em;
+  font-family: 'brizeuxnormal', sans-serif;
+  color: #7171ff;
+  flex-shrink: 0;
+}
+
+
 .no-style {
   list-style-type: none;
     font-family:'brizeuxnormal', sans-serif;

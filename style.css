@@ -35,6 +35,10 @@
   flex-shrink: 0;
 }
 
+.bordure_image {
+    border-style: solid;
+    border-width: 1.5px;
+}
 
 .no-style {
   list-style-type: none;

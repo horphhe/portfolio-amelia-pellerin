@@ -120,6 +120,12 @@ body {
     color: #ff4100;
 }
 
+video {
+            max-width: 100%; /* Adapte la vidéo à la largeur de son conteneur */
+            height: auto;    /* Garde les proportions */
+            display: block;  /* Évite les marges indésirables */
+}
+
 .photo-gallery {
     display: flex;
     flex-direction: column;

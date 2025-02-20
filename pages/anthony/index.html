@@ -39,17 +39,20 @@
 </ul>
                 </figure>
                   <figure class="case">
- <video id="player" controls="" playsinline="" muted="">
-        <source src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/anthony/animation_anthony.mp4" type="video/mp4">
-        <source src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/anthony/animation_anthony.webm" type="video/webm">
-        Votre navigateur ne supporte pas la vidéo.
-    </video>
+<video id="player" controls autoplay muted playsinline loop>
+    <source src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/anthony/animation_anthony.mp4" type="video/mp4">
+    <source src="https://horphhe.github.io/portfolio-amelia-pellerin/pages/anthony/animation_anthony.webm" type="video/webm">
+    Votre navigateur ne supporte pas la vidéo.
+</video>
 
-    <!-- Script Plyr.js -->
-    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
-    <script>
-    const player = new Plyr('#player', {
-    </script>
+<!-- Script Plyr.js -->
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const player = new Plyr('#player');
+        player.play(); // Lance la vidéo automatiquement
+    });
+</script>
         </figure> 
             </div>
             <footer class="footer">

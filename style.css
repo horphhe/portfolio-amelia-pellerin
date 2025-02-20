@@ -300,3 +300,7 @@ video {
         padding: 30px;
     }
 }
+
+video::-webkit-media-controls {
+    display: none !important;
+}
